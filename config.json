@@ -1,0 +1,6 @@
+{
+	"DB_HOST": "localhost",
+	"DB_USER": "mirafox",
+	"DB_PASS": "mirafox",
+	"DB_NAME": "mirafox"
+}

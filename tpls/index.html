@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Mirafox</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/js.js"></script>
+</head>
+<body>
+<div id="header">
+	<button data-tab="testing">Тестирование</button>
+	<button data-tab="results" id="result-btn">Результаты</button>
+</div>
+<div class="tab" id="testing">
+	<form id="testing-from">
+		Настройки теста
+		<label for="difficult_by">Сложность от</label>
+		<input type="number" min="0" max="100" name="difficult_by" id="difficult_by" value="0">
+		<label for="difficult_to">До</label>
+		<input type="number" min="0" max="100" name="difficult_to" id="difficult_to" value="100">
+		<label for="iq">Интелект тестируемого</label>
+		<input type="number" min="0" max="100" name="iq" id="iq" value="50">
+		<button type="submit">submit</button>
+	</form>
+	<table border="1">
+		<thead>
+		<tr>
+			<td>№</td>
+			<td>Question ID</td>
+			<td>Used</td>
+			<td>Difficult</td>
+			<td>Pass</td>
+		</tr>
+		</thead>
+		<tbody id="test-result">
+		</tbody>
+	</table>
+	<div id="test-result-count">
+
+	</div>
+</div>
+<div class="tab" id="results">
+	<table>
+		<thead>
+		<tr>
+			<td>№</td>
+			<td>IQ</td>
+			<td>By</td>
+			<td>To</td>
+			<td>Result</td>
+		</tr>
+		</thead>
+		<tbody>
+
+		</tbody>
+	</table>
+</div>
+</body>
+</html>
